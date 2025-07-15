@@ -33,6 +33,10 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+
+    padding: 20px;
+    /* Add padding for content spacing */
+
 }
 
 .title {
@@ -62,8 +66,12 @@ p {
 }
 
 
-.book-wrapper {
+.books-wrapper {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    align-self: stretch;
 
 
 }
@@ -77,6 +85,10 @@ p {
     flex-direction: column;
     gap: 15px;
     padding: 20px;
+}
+
+.hard-coded {
+    grid-column: 1/2;
 }
 
 .remove {
