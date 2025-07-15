@@ -20,7 +20,10 @@ p {
     margin: 0px;
 }
 
-button , label, option, select{
+button,
+label,
+option,
+select {
     font-family: "interblack";
 }
 
@@ -143,4 +146,128 @@ button , label, option, select{
     color: #2d3748;
     font-size: 2vw;
     font-style: italic;
+}
+/* Popup Layout */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.overlay.active .popup {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Popup Header */
+.popup-header {
+    padding: 24px 24px 16px 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.popup-header p {
+    margin: 0;
+    font-size: 24px;
+    color: #2d3748;
+}
+
+/* Popup Content */
+.popup-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    color: #374151;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input, select {
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+    background-color: white;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Form Buttons */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.form-cancel {
+    background-color: white;
+    color: black;
+    border: 2px solid #e5e7eb;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form-cancel:hover {
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+}
+
+.form-add {
+    background-color: #2563eb;
+    color: white;
+    border: 2px solid #2563eb;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.form-add:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
 }
