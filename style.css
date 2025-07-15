@@ -23,7 +23,7 @@ p {
 .container {
     background-color: white;
     width: 60vw;
-    height: 60vh;
+    min-height: 60vh; /* Changed from height: 60vh */
     margin: auto;
     margin-top: 40px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
@@ -32,7 +32,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 
     padding: 20px;
     /* Add padding for content spacing */
@@ -54,8 +54,9 @@ p {
     font-weight: 900;
     border: 0px solid transparent;
     width: 20%;
-    height: 10%;
+    height: 40px;
     font-size: 20px;
+    margin-bottom: 6vh;
 }
 
 .add-button:hover {
@@ -72,7 +73,6 @@ p {
     gap: 1rem;
     align-self: stretch;
 
-
 }
 
 .book-item {
@@ -86,9 +86,7 @@ p {
     padding: 20px;
 }
 
-.hard-coded {
-    grid-column: 1/2;
-}
+
 
 .remove {
     all: unset;
@@ -110,8 +108,8 @@ p {
     padding: 5px;
     text-align: center;
     border-radius: 24px;
-    width: 40%;
     font-weight: 900;
+    width: 40%;
 }
 
 .status[data-status="read"] {
