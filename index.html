@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My library</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 
@@ -48,14 +49,14 @@
                         <input type="number" name="pages" id="total-pages-input" required>
 
                         <label for="status-input">Status</label>
-                        <select name="status" id="status-input" >
+                        <select name="status" id="status-input">
                             <option value="read">Read</option>
                             <option value="to-read">To Read</option>
                         </select>
                     </form>
                     <div class="form-buttons">
-                        <button class="form-cancel" type="reset">Cancel</button>
-                        <button class="form-add" type="submit" >Add book</button>
+                        <button class="form-cancel" type="reset" form="myForm">Cancel</button>
+                        <button class="form-add" type="submit" form="myForm">Add book</button>
                     </div>
                 </div>
             </div>

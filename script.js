@@ -104,3 +104,10 @@ cancelButton.addEventListener("click", () => {
     overlay.classList.remove("active");
     popup.classList.remove("active");
 });
+
+
+let add = document.querySelector(".add-button");
+add.addEventListener("click",()=>{
+    overlay.classList.add("active");
+    popup.classList.add("active");
+});
