@@ -70,7 +70,6 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-
     align-self: stretch;
 
 
@@ -108,9 +107,10 @@ p {
 }
 
 .status {
+    padding: 5px;
     text-align: center;
     border-radius: 24px;
-    width: 50%;
+    width: 40%;
     font-weight: 900;
 }
 
