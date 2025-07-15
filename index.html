@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My library</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <div class="container">
         <p class="title">My library</p>
@@ -28,11 +30,34 @@
             </div>
         </div>
 
-        <div class="pop-up">
+        <div class="popup">
+
+            <p class="popup-title">Add new book</p>
+
+            <form action="">
+                <label for="book-title-input">Book title</label>
+                <input type="text" name="bookTitle" id="book-title-input">
+
+                <label for="author-name-input">Author</label>
+                <input type="text" name="authorName" id="book-title-input">
 
 
+                <label for="total-pages-input">Pages</label>
+                <input type="number" name="pages" id="total-pages-input">
+
+                <label for="status-input">Status</label>
+                <select name="status" id="status-input">
+                    <option value="read">Read</option>
+                    <option value="to-read">To Read</option>
+                </select>
+            </form>
+            <div class="form-buttons">
+                <button class="form-cancel">Cancel</button>
+                <button class="form-add">Add book</button>
+            </div>
 
         </div>
     </div>
 </body>
+
 </html>

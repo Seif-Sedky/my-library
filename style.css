@@ -20,7 +20,7 @@ p {
     margin: 0px;
 }
 
-button {
+button , label, option, select{
     font-family: "interblack";
 }
 
