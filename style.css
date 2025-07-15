@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'interblack';
+    src: url('inter-black-webfont.woff2') format('woff2'),
+        url('inter-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f3f4f6;
+}
+
+p {
+    font-family: 'interblack';
+}
+
+.container {
+    background-color: white;
+    width: 60vw;
+    height: 40vh;
+    margin: auto;
+    margin-top: 40px;
+
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
