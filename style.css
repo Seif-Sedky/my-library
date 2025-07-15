@@ -17,6 +17,7 @@ body {
 
 p {
     font-family: 'interblack';
+    margin: 0px;
 }
 
 .container {
@@ -26,7 +27,7 @@ p {
     margin: auto;
     margin-top: 40px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-
+    border-radius: 16px;
 
     display: flex;
     flex-direction: column;
@@ -38,6 +39,8 @@ p {
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 0px;
+    color: #2d3748;
+
 }
 
 .add-button {
@@ -55,4 +58,78 @@ p {
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.book-wrapper {
+    display: grid;
+
+
+}
+
+.book-item {
+    background-color: #f3f4f6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.remove {
+    all: unset;
+    cursor: pointer;
+    color: #ef4444;
+    font-size: 20px;
+    align-self: flex-end;
+    font-weight: 900;
+
+}
+
+.remove:hover {
+    transition: all 0.2s ease;
+    color: #b91c1c;
+    cursor: pointer;
+}
+
+.status {
+    text-align: center;
+    border-radius: 24px;
+    width: 50%;
+    font-weight: 900;
+}
+
+.status[data-status="read"] {
+    background-color: #dcfce7;
+    color: #166534;
+
+}
+
+.status[data-status="to-read"] {
+    background-color: #fef9c3;
+    color: #854d09;
+}
+
+.status:hover {
+    cursor: pointer;
+}
+
+.pages {
+    font-size: 25px;
+    color: #b1b1b1;
+}
+
+.author {
+    font-size: 30px;
+    color: #4a5568;
+}
+
+.book-title {
+    color: #2d3748;
+    font-size: 2vw;
+    font-weight: 700;
+    font-style: italic;
 }
