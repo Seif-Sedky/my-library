@@ -145,7 +145,6 @@ select {
 .book-title {
     color: #2d3748;
     font-size: 2vw;
-    font-style: italic;
 }
 /* Popup Layout */
 .overlay {
