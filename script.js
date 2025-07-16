@@ -82,6 +82,15 @@ function removeBookFromLibraryArray(id) {
     }
 }
 
+function toggleBookStatusFromLibraryArray(id) {
+    for (let i = 0; i < myLibrary.length; i++) {
+        if (myLibrary[i].id == id) {
+            myLibrary[i].status = myLibrary[i].status === "read" ? "to-read" : "read";
+            return;
+        }
+    }
+}
+
 let cancelButton = document.querySelector(".form-cancel");
 let addButton = document.querySelector(".form-add");
 let overlay = document.querySelector(".overlay");
@@ -126,7 +135,21 @@ let booksWrapper = document.querySelector(".books-wrapper");
 booksWrapper.addEventListener('click', function (e) {
     if ((e.target.classList.contains('remove'))) {
         let book = e.target.parentElement;
-        removeBookFromLibraryArray(book.querySelector('input[name="bookId"]').value);
+        let id = book.querySelector('input[name="bookId"]').value;
+        removeBookFromLibraryArray(id);
         book.remove();
+    }
+    if ((e.target.classList.contains('status'))) {
+        let book = e.target.parentElement;
+        let id = book.querySelector('input[name="bookId"]').value;
+        toggleBookStatusFromLibraryArray(id);
+        if (e.target.getAttribute("data-status") === "read") {
+            e.target.setAttribute("data-status", 'to-read');
+            e.target.textContent="TO-READ"
+        }
+        else {
+            e.target.setAttribute("data-status", 'read');
+            e.target.textContent="READ"
+        }
     }
 });

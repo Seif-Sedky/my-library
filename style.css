@@ -146,6 +146,7 @@ select {
     color: #2d3748;
     font-size: 2vw;
 }
+
 /* Popup Layout */
 .overlay {
     display: none;
@@ -218,7 +219,8 @@ label {
     display: block;
 }
 
-input, select {
+input,
+select {
     padding: 12px 16px;
     border: 2px solid #e5e7eb;
     border-radius: 8px;
@@ -227,7 +229,8 @@ input, select {
     background-color: white;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
     border-color: #2563eb;
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
