@@ -28,7 +28,7 @@ A dynamic web application for managing personal book collections with an intuiti
 - **Progressive Enhancement** - Graceful degradation and feature detection
 
 ## 🎯 Key Features
-- Add, remove, and toggle book reading status (soon)
+- Add, remove, and toggle book reading status
 - Smooth popup animations and transitions
 - Responsive grid layout for book display
 - Form validation and data persistence
