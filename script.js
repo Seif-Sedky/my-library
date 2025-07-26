@@ -145,11 +145,29 @@ booksWrapper.addEventListener('click', function (e) {
         toggleBookStatusFromLibraryArray(id);
         if (e.target.getAttribute("data-status") === "read") {
             e.target.setAttribute("data-status", 'to-read');
-            e.target.textContent="TO-READ"
+            e.target.textContent = "TO-READ"
         }
         else {
             e.target.setAttribute("data-status", 'read');
-            e.target.textContent="READ"
+            e.target.textContent = "READ"
         }
     }
 });
+
+function initializeValidation() {
+    let pages = document.querySelector('#total-pages-input');
+    pages.addEventListener('input', () => {
+        pages.setCustomValidity('');//means valid
+
+
+        if (!pages.validity.valid) { //doesnt really matter here since no intrinsic validation for number, but this code is a good pattern to remember 
+            return;
+        }
+
+        if (pages.value < 100) {
+            pages.setCustomValidity('Come on now, a healthy book must be at least 100 pages, no slacking!');//means make it invalid and show this message on attempt to submit, if you want live showing on chrome you have to add your own div and remove validation from that element you are adding the live validation to for no duplication
+        }
+    });
+}
+
+window.addEventListener("load", initializeValidation);

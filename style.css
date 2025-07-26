@@ -273,3 +273,8 @@ select:focus {
     background-color: #1d4ed8;
     border-color: #1d4ed8;
 }
+
+
+.input:invalid {
+    border-color: red;
+}
