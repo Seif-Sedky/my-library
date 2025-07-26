@@ -8,7 +8,7 @@ A dynamic web application for managing personal book collections with an intuiti
 - **Vanilla JavaScript** - DOM manipulation, event handling, and dynamic content generation
 - **ES6+ Features** - Arrow functions, template literals, destructuring, and modern syntax
 - **CSS Grid & Flexbox** - Responsive layouts and modern CSS positioning
-- **Form Validation** - Client-side validation with HTML5 and JavaScript
+- **Form Validation** - Customized Client-side validation with HTML5 and JavaScript
 
 ### UI/UX Design
 - **Modal/Popup Systems** - Overlay interfaces with smooth transitions
