@@ -165,7 +165,9 @@ function initializeValidation() {
         }
 
         if (pages.value < 100) {
-            pages.setCustomValidity('Come on now, a healthy book must be at least 100 pages, no slacking!');//means make it invalid and show this message on attempt to submit, if you want live showing on chrome you have to add your own div and remove validation from that element you are adding the live validation to for no duplication
+            pages.setCustomValidity('Come on now, a healthy book must be at least 100 pages, no slacking!');//means make it invalid and show this message on attempt to submit,
+            //if you want live showing on chrome you have to add your own div and remove validation from that element you are adding the live validation to for 
+            //no duplication, but the same idea holds, you are changing the valid pseudo class and based on that you show the custom div 
         }
     });
 }
